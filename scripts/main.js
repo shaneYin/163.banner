@@ -31,6 +31,7 @@ function initEvent() {
 
 function initBanner() {
 	var banner = [];
+	//此处是通过自己在本机上创建的服务器，来模拟的后台数据。
 	var url = 'http://localhost/mock/163-banner.mock.php?callback=?';
 	$.getJSON(url, function(data) {
 		var content = data.content;
